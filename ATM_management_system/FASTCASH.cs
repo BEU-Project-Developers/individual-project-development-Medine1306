@@ -80,7 +80,6 @@ namespace ATM_management_system
                 string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "'," + 100 + ",'" + DateTime.Today.Date.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
-                //MessageBox.Show("Account Created Successfully");
                 Con.Close();
                 Login log = new Login();
                 log.Show();
@@ -101,7 +100,6 @@ namespace ATM_management_system
                 string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "'," + 500 + ",'" + DateTime.Today.Date.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
-                //MessageBox.Show("Account Created Successfully");
                 Con.Close();
                 Login log = new Login();
                 log.Show();
@@ -122,7 +120,6 @@ namespace ATM_management_system
                 string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "'," + 1000 + ",'" + DateTime.Today.Date.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
-                //MessageBox.Show("Account Created Successfully");
                 Con.Close();
                 Login log = new Login();
                 log.Show();
@@ -143,7 +140,6 @@ namespace ATM_management_system
                 string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "'," + 2000 + ",'" + DateTime.Today.Date.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
-                //MessageBox.Show("Account Created Successfully");
                 Con.Close();
                 Login log = new Login();
                 log.Show();
@@ -164,7 +160,6 @@ namespace ATM_management_system
                 string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "'," + 5000 + ",'" + DateTime.Today.Date.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
-                //MessageBox.Show("Account Created Successfully");
                 Con.Close();
                 Login log = new Login();
                 log.Show();
@@ -185,7 +180,6 @@ namespace ATM_management_system
                 string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "'," + 10000 + ",'" + DateTime.Today.Date.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
-                //MessageBox.Show("Account Created Successfully");
                 Con.Close();
                 Login log = new Login();
                 log.Show();
@@ -345,6 +339,11 @@ namespace ATM_management_system
         private void label2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void balancelbl_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

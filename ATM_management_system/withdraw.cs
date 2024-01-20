@@ -44,7 +44,6 @@ namespace ATM_management_system
                 string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "'," + wdamtTb.Text + ",'" + DateTime.Today.Date.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
-                //MessageBox.Show("Account Created Successfully");
                 Con.Close();
                 Login log = new Login();
                 log.Show();

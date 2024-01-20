@@ -60,5 +60,10 @@ namespace ATM_management_system
             home.Show();
             this.Hide();
         }
+
+        private void ChangePin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

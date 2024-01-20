@@ -31,7 +31,6 @@ namespace ATM_management_system
                 string query = "insert into TransactionTbl values('" + Acc + "','" + TrType + "'," + DepoAmtTb.Text + ",'" + DateTime.Today.Date.ToString() + "')";
                 SqlCommand cmd = new SqlCommand(query, Con);
                 cmd.ExecuteNonQuery();
-                //MessageBox.Show("Account Created Successfully");
                 Con.Close();
                 Login log = new Login();
                 log.Show();
@@ -72,7 +71,6 @@ namespace ATM_management_system
                 }
             }
         }
-        //hsbkdkdks
         private void label7_Click(object sender, EventArgs e)
         {
             HOME home = new HOME();
@@ -83,6 +81,7 @@ namespace ATM_management_system
         private void getbalance()
         {
             Con.Open();
+            //retrieve the balance from the table for the account number specified by the variable Acc
             SqlDataAdapter sda = new SqlDataAdapter("select Balance from AccountTbl where AccNum='" + Acc + "'", Con);
             DataTable dt = new DataTable();
             sda.Fill(dt);

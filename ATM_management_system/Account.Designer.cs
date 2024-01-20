@@ -65,6 +65,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1321, 125);
             panel1.TabIndex = 1;
+            panel1.Paint += panel1_Paint;
             // 
             // label2
             // 
@@ -336,6 +337,7 @@
             Name = "Account";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Account";
+            Load += Account_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

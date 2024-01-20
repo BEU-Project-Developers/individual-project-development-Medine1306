@@ -23,8 +23,8 @@ namespace ATM_management_system
         {
             Con.Open();
             string query = "select * from TransactionTbl where AccNum = '" + Acc + "'";
-            SqlDataAdapter sda = new SqlDataAdapter(query, Con);
-            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            SqlDataAdapter sda = new SqlDataAdapter(query, Con); //execute the query and fetch the results into a DataSet.
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda); //automatically generates SQL commands (insert, update, delete)
             var ds = new DataSet();
             sda.Fill(ds);
             MinistatementDGV.DataSource = ds.Tables[0];

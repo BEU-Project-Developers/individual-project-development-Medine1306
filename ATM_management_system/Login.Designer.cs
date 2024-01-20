@@ -54,6 +54,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(766, 94);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
             // 
             // label6
             // 
@@ -185,6 +186,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "Login";
             Text = "Login";
+            Load += Login_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

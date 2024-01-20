@@ -53,6 +53,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1008, 125);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
             // 
             // label2
             // 
@@ -192,6 +193,7 @@
             AccNumlbl.Size = new Size(250, 36);
             AccNumlbl.TabIndex = 4;
             AccNumlbl.Text = "Account Number";
+            AccNumlbl.Click += AccNumlbl_Click;
             // 
             // HOME
             // 

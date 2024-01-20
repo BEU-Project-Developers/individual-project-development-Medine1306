@@ -164,6 +164,7 @@
             Name = "ChangePin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ChangePin";
+            Load += ChangePin_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

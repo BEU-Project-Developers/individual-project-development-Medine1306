@@ -30,12 +30,13 @@ namespace ATM_management_system
         private void button1_Click(object sender, EventArgs e)
         {
             Con.Open();
+            //create a SqlDataAdapter to execute an SQL query
             SqlDataAdapter sda = new SqlDataAdapter("select count(*) from AccountTbl where Accnum='" + AccNumTb.Text + "' and PIN = " + PinTb.Text + "", Con);
             DataTable dt = new DataTable();
-            sda.Fill(dt);
+            sda.Fill(dt); //fill a DataTable with the result.
             if (dt.Rows[0][0].ToString() == "1")
             {
-                AccNumber = AccNumTb.Text;
+                AccNumber = AccNumTb.Text; //sets the AccNumber static variable
                 HOME home = new HOME();
                 home.Show();
                 this.Hide();
@@ -61,6 +62,16 @@ namespace ATM_management_system
         private void label6_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

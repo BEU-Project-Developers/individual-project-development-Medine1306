@@ -60,8 +60,8 @@ namespace ATM_management_system
         public static String? AccNumber;
         private void HOME_Load(object sender, EventArgs e)
         {
-            AccNumlbl.Text = "Account Number:" + Login.AccNumber;
-            AccNumber = Login.AccNumber;
+            AccNumlbl.Text = "Account Number:" + Login.AccNumber; //Setting account number label
+            AccNumber = Login.AccNumber; //assign the value of "Login.AccNumber"
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -76,6 +76,16 @@ namespace ATM_management_system
             ChangePin Pin = new ChangePin();
             Pin.Show();
             this.Hide();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void AccNumlbl_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

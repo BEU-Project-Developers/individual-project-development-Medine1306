@@ -65,7 +65,7 @@ namespace ATM_management_system
                 {
                     Con.Open();
                     string query = "insert into AccountTbl values('" + AccNumTb.Text + "','" + AccNametb.Text + "','" + FanameTb.Text + "','" + dobdate.Value.Date + "','" + PhoneTb.Text + "','" + Addresstb.Text + "','" + educationcb.SelectedItem.ToString() + "','" + occupationtb.Text + "'," + pintb.Text + "," + bal + ")";
-                    SqlCommand cmd = new SqlCommand(query, Con);
+                    SqlCommand cmd = new SqlCommand(query, Con); //these two lines are used for non-query SQL statements like INSERT, UPDATE, DELETE
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Account Created Successfully");
                     Con.Close();
@@ -85,6 +85,16 @@ namespace ATM_management_system
             Login log = new Login();
             log.Show();
             this.Hide();
+        }
+
+        private void Account_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

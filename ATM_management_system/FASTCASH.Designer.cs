@@ -186,6 +186,7 @@
             balancelbl.Size = new Size(232, 31);
             balancelbl.TabIndex = 24;
             balancelbl.Text = "Available Balance";
+            balancelbl.Click += balancelbl_Click;
             // 
             // label7
             // 
