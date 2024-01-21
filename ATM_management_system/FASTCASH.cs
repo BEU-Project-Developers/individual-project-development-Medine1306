@@ -73,7 +73,7 @@ namespace ATM_management_system
 
         private void addtransaction1()
         {
-            string TrType = "WithDraw";
+            string TrType = "FASTCASH";
             try
             {
                 Con.Open();
@@ -93,7 +93,7 @@ namespace ATM_management_system
         }
         private void addtransaction2()
         {
-            string TrType = "WithDraw";
+            string TrType = "FASTCASH";
             try
             {
                 Con.Open();
@@ -113,7 +113,7 @@ namespace ATM_management_system
         }
         private void addtransaction3()
         {
-            string TrType = "WithDraw";
+            string TrType = "FASTCASH";
             try
             {
                 Con.Open();
@@ -133,7 +133,7 @@ namespace ATM_management_system
         }
         private void addtransaction4()
         {
-            string TrType = "WithDraw";
+            string TrType = "FASTCASH";
             try
             {
                 Con.Open();
@@ -153,7 +153,7 @@ namespace ATM_management_system
         }
         private void addtransaction5()
         {
-            string TrType = "WithDraw";
+            string TrType = "FASTCASH";
             try
             {
                 Con.Open();
@@ -173,7 +173,7 @@ namespace ATM_management_system
         }
         private void addtransaction6()
         {
-            string TrType = "WithDraw";
+            string TrType = "FASTCASH";
             try
             {
                 Con.Open();
